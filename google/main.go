@@ -12,9 +12,10 @@ var degree int
 
 func init() {
 	flag.IntVar(&total, "total", 10000000, "-total=1000000")
-	flag.IntVar(&degree, "degree", 100, "-degree=256")
+	flag.IntVar(&degree, "degree", 1000, "-degree=256")
 	flag.Parse()
 }
+
 func main() {
 	if total < 1 || degree < 2 {
 		return
